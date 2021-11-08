@@ -20,10 +20,3 @@ make report.html
 ```
 
 This will create a file called `report.html` output in your directory that contains the results.
-
-
-## Open the report
-``` bash
-cd Rmd
-open report.html
-```
