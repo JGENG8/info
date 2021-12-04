@@ -3,13 +3,11 @@
 For my project, I will analyze the brinda12h_psc_jm_Sep2020 data. The aim of this project is to adjust serum ferritin value across different methods and compare the sf_adj value.
 Results contain the sf_adj summary information of overall data or of seperate categories.
 
-## Be prepared to clone, we need to synchronize my local project directory.
+## Docker
+1. Pull the image: docker pull rocker/tidyverse:jgeng8/info550
+2. Make the directory: docker build -t ex_proj .
+3. Run: docker run -v (your path to project):/project -it  (Mounting directories)
 
-```{r}
-
-renv::restore()
-
-```
 
 ## Execute the analysis
 
