@@ -17,6 +17,11 @@ RUN mkdir /project
 # copy contents of local folder to project folder in container
 COPY ./ /project/
 
+# make R scripts executable
+RUN chmod +x /project/R/*.R
+
+WORKDIR /project
+
 
 # make container entry point bash
 CMD make report.html
