@@ -17,10 +17,11 @@ RUN mkdir /project
 COPY ./ /project/
 
 # make R scripts executable
-RUN chmod +x /project/
+RUN chmod +x /project/Rmd/*.Rmd
 
 WORKDIR /project
+#RUN R -e "renv::deactivate()"
 
 
 # make container entry point bash
-CMD make report.html
+CMD make output/report.html
