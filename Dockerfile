@@ -2,7 +2,6 @@ FROM rocker/tidyverse
 
 # install R packages
 RUN Rscript -e "install.packages('renv')"
-RUN Rscript -e "renv::init()"
 RUN Rscript -e "install.packages('rprojroot')"
 RUN Rscript -e "install.packages('here')"
 RUN Rscript -e "install.packages('psych')"
