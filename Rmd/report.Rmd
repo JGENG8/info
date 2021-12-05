@@ -6,8 +6,8 @@ output: html_document
 ---
 
 ```{r}
-library(renv)
-renv::init()
+#library(renv)
+#renv::init()
 library(rprojroot)
 library(here)
 library(psych)
@@ -17,7 +17,7 @@ here::i_am("Rmd/report.Rmd")
 
 Import raw data set
 ```{r,include=FALSE}
-brinda <- read.csv(here::here('data','brinda12h_psc_jm_Sep2020.csv'), header = TRUE)
+brinda <- read.csv(here::here('Data','brinda12h_psc_jm_Sep2020.csv'), header = TRUE)
 ```
 
 Subset the table with non-missing value in sf, crp and agp 
